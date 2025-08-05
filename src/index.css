@@ -1,0 +1,36 @@
+@import '@fontsource-variable/onest';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.project-swiper .swiper-button-next,
+.project-swiper .swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.2s ease;
+}
+
+.project-swiper .swiper-button-next:hover,
+.project-swiper .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.project-swiper .swiper-button-next::after,
+.project-swiper .swiper-button-prev::after {
+  color: #ffffff; 
+  font-size: 16px; 
+}
+
+.project-swiper .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.project-swiper .swiper-pagination-bullet-active {
+    background-color: #a855f7;
+}
