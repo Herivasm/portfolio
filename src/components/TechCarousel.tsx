@@ -2,15 +2,19 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import './TechCarousel.css'
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiNextdotjs, SiExpress, SiJest, SiSwagger, SiJsonwebtokens, SiMongoose, SiSequelize, SiPrisma, SiNodemon, SiZod, SiReactquery, SiReacthookform, SiReactrouter, SiAxios, SiVite } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiNextdotjs, SiExpress, SiJest, SiSwagger, SiJsonwebtokens, SiMongoose, SiSequelize, SiPrisma, SiNodemon, SiZod, SiReactquery, SiReacthookform, SiReactrouter, SiAxios, SiVite, SiNestjs, SiTypeorm, SiNatsdotio } from 'react-icons/si';
+import { DiDocker } from 'react-icons/di';
+import { CgNpm } from 'react-icons/cg';
 
 const technologies = [
     { icon: <FaHtml5 />, name: 'HTML5' },
     { icon: <FaCss3Alt />, name: 'CSS3' },
     { icon: <SiJavascript />, name: 'JavaScript' },
     { icon: <SiTypescript />, name: 'TypeScript' },
+    { icon: <CgNpm />, name: 'npm' },
     { icon: <FaNodeJs />, name: 'Node.js' },
     { icon: <SiExpress />, name: 'Express.js' },
+    { icon: <SiNestjs />, name: 'NestJS' },
     { icon: <SiNodemon />, name: 'Nodemon' },
     { icon: <SiJsonwebtokens />, name: 'JWT' },
     { icon: <SiSwagger />, name: 'Swagger' },
@@ -18,8 +22,11 @@ const technologies = [
     { icon: <SiPostgresql />, name: 'PostgreSQL' },
     { icon: <SiSequelize />, name: 'Sequelize' },
     { icon: <SiPrisma />, name: 'Prisma' },
+    { icon: <SiTypeorm />, name: 'TypeORM' },
     { icon: <SiMongodb />, name: 'MongoDB' },
     { icon: <SiMongoose />, name: 'Mongoose' },
+    { icon: <DiDocker />, name: 'Docker' },
+    { icon: <SiNatsdotio />, name: 'NATS' },
     { icon: <SiVite />, name: 'Vite' },
     { icon: <FaReact />, name: 'React' },
     { icon: <SiNextdotjs />, name: 'Next.js' },
