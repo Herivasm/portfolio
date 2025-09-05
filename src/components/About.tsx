@@ -8,7 +8,7 @@ const About = () => {
             <div className="md:w-1/2 text-center md:text-left">
                 <h1 className="text-4xl sm:text-5xl font-bold text-white">Hola, soy Heriberto Yañez 👋</h1>
                 <p className="mt-4 text-lg text-neutral-300">
-                    Estudiante con experiencia práctica y apasionado en el desarrollo de aplicaciones web utilizando React, TypeScript y Node.js, creando aplicaciones  web eficientes y escalables, con implementación de APIs RESTful y el manejo de bases de datos gestionadas con Sequelize, Prisma y Mongoose.  </p>
+                    Estudiante con experiencia práctica y apasionado en el desarrollo de aplicaciones web utilizando TypeScript, Node.js y React, creando aplicaciones  web eficientes y escalables, con implementación de APIs RESTful y el manejo de bases de datos gestionadas con Sequelize, Prisma, Mongoose y TypeORM.  </p>
                 <div className="mt-6 flex justify-center md:justify-start items-center gap-4">
                     <a href="https://github.com/Herivasm/" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-white text-3xl transition-colors"><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/heribertoya%C3%B1ez/" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-white text-3xl transition-colors"><FaLinkedin /></a>

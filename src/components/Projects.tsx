@@ -40,13 +40,53 @@ import quiosco5 from '../assets/projects/qui5.webp'
 import uptask1 from '../assets/projects/up1.webp'
 import uptask2 from '../assets/projects/up2.webp'
 
+import ct1 from '../assets/projects/home_page.webp'
+import ct2 from '../assets/projects/Login.webp'
+import ct3 from '../assets/projects/Register.webp'
+import ct4 from '../assets/projects/reset_password.webp'
+import ct5 from '../assets/projects/RecoveryPassword.webp'
+import ct6 from '../assets/projects/confirmAccount.webp'
+import ct7 from '../assets/projects/dashboard.webp'
+import ct8 from '../assets/projects/edit_budget.webp'
+import ct9 from '../assets/projects/delete_budget.webp'
+import ct10 from '../assets/projects/expenses.webp'
+import ct11 from '../assets/projects/edit_expense.webp'
+import ct12 from '../assets/projects/delete_expense.webp'
+import ct13 from '../assets/projects/limit_reached.webp'
+import ct14 from '../assets/projects/update_profile.webp'
+import ct15 from '../assets/projects/change_password.webp'
+
+import pos1 from '../assets/projects/sudaderas_1.webp'
+import pos2 from '../assets/projects/tenis_1.webp'
+import pos3 from '../assets/projects/lentes.webp'
+import pos4 from '../assets/projects/venta.webp'
+import pos5 from '../assets/projects/cupon no valido.webp'
+import pos6 from '../assets/projects/admin.webp'
+import pos7 from '../assets/projects/productos.webp'
+import pos8 from '../assets/projects/nuevo-prod.webp'
+import pos9 from '../assets/projects/edit prod.webp'
+
 const misProyectos: {
     title: string;
     description: string;
     images: string[];
-    technologies: ('TypeScript' | 'Swagger ' | 'Jest' | 'Express.js' | 'React' | 'Tailwind CSS' | 'Nodemon' | 'JWT' | 'MongoDB' | 'Axios' | 'Mongoose' | 'Prisma' | 'AI' | 'Next.js' | 'Zustand' | 'Sequelize' | 'React Router' | 'PostgreSQL' | 'React Query' | 'React Hook Form' | 'Zod')[];
+    technologies: ('TypeScript' | 'Swagger ' | 'Jest' | 'Express.js' | 'React' | 'Tailwind CSS' | 'Nodemon' | 'JWT' | 'MongoDB' | 'Axios' | 'Mongoose' | 'Prisma' | 'AI' | 'Next.js' | 'Zustand' | 'Sequelize' | 'React Router' | 'PostgreSQL' | 'React Query' | 'React Hook Form' | 'Zod' | 'TypeORM' | 'NestJS')[];
     link?: string;
 }[] = [
+        {
+            title: "Punto de Venta (NestJS/Next.js)",
+            description: "Punto de venta con funcionalidades de gestión de productos, categorías y ventas. Implementando sistema de cupones de descuento.",
+            images: [pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9],
+            technologies: ['TypeScript', 'PostgreSQL', 'TypeORM', 'NestJS', 'Next.js', 'Tailwind CSS', 'React Query', 'Zod', 'Zustand'],
+            link: 'https://www.linkedin.com/posts/heribertoya%C3%B1ez_el-d%C3%ADa-de-hoy-he-concluido-el-tercer-y-%C3%BAltimo-activity-7366649873091231744-EmzK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFc16cBEjQ9uoQulXc3DH2fVt5JEI3okD0'
+        },
+        {
+            title: "CashTrackr",
+            description: "Aplicación para la administración de gastos y gestión de presupuestos.",
+            images: [ct1, ct2, ct3, ct4, ct5, ct6, ct7, ct8, ct9, ct10, ct11, ct12, ct13, ct14, ct15],
+            technologies: ['TypeScript', 'PostgreSQL', 'Sequelize', 'Express.js', 'Nodemon', 'JWT', 'Jest', 'Next.js', 'Tailwind CSS', 'Zod'],
+            link: 'https://www.linkedin.com/posts/heribertoya%C3%B1ez_segundo-proyecto-terminado-tras-3-activity-7362259955082559489-FVT_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFc16cBEjQ9uoQulXc3DH2fVt5JEI3okD0'
+        },
         {
             title: "UpTask",
             description: "Una plataforma colaborativa para la gestión de proyectos y tareas. Con funcionalidades de autenticación, gestión de tareas y proyectos.",
