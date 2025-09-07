@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import './TechCarousel.css'
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiNextdotjs, SiExpress, SiJest, SiSwagger, SiJsonwebtokens, SiMongoose, SiSequelize, SiPrisma, SiNodemon, SiZod, SiReactquery, SiReacthookform, SiReactrouter, SiAxios, SiVite, SiNestjs, SiTypeorm, SiNatsdotio } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiNextdotjs, SiExpress, SiJest, SiSwagger, SiJsonwebtokens, SiMongoose, SiSequelize, SiPrisma, SiNodemon, SiZod, SiReactquery, SiReacthookform, SiReactrouter, SiAxios, SiVite, SiNestjs, SiTypeorm, SiNatsdotio, SiSqlite } from 'react-icons/si';
 import { DiDocker } from 'react-icons/di';
 import { CgNpm } from 'react-icons/cg';
 
@@ -20,6 +20,7 @@ const technologies = [
     { icon: <SiSwagger />, name: 'Swagger' },
     { icon: <SiJest />, name: 'Jest' },
     { icon: <SiPostgresql />, name: 'PostgreSQL' },
+    { icon: <SiSqlite />, name: 'SQLite' },
     { icon: <SiSequelize />, name: 'Sequelize' },
     { icon: <SiPrisma />, name: 'Prisma' },
     { icon: <SiTypeorm />, name: 'TypeORM' },
