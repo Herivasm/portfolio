@@ -16,8 +16,8 @@ import { GiArtificialIntelligence } from 'react-icons/gi';
 import { SiAxios, SiDocker, SiExpress, SiJest, SiJsonwebtokens, SiMongoose, SiNatsdotio, SiNestjs, SiNextdotjs, SiNodemon, SiPrisma, SiReacthookform, SiReactquery, SiReactrouter, SiSequelize, SiSwagger, SiTailwindcss, SiTypeorm, SiTypescript, SiZod } from 'react-icons/si';
 
 const ICONS = {
-  React: <FaReact />,
-  TypeScript: <SiTypescript />,
+  'React': <FaReact />,
+  'TypeScript': <SiTypescript />,
   'Node.js': <FaNodeJs />,
   'Tailwind CSS': <SiTailwindcss />,
   'Zustand': <FaReact />,
