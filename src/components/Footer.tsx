@@ -1,7 +1,16 @@
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import type { Language } from '../App'
 
-const Footer = () => {
+interface FooterProps {
+    language: Language
+}
+
+const Footer = ({ language }: FooterProps) => {
+    const text = language === 'es'
+        ? 'Todos los derechos reservados.'
+        : 'All rights reserved.'
+
     return (
         <footer className="py-8 border-t border-neutral-800">
             <div className="flex justify-center items-center gap-6">
@@ -11,7 +20,7 @@ const Footer = () => {
                 <a href="mailto:sheribertoyanez@gmail.com" className="text-neutral-400 hover:text-white text-2xl transition-colors"><MdEmail /></a>
             </div>
             <p className="mt-6 text-center text-neutral-500 text-sm">
-                © {new Date().getFullYear()} Heriberto Yañez. Todos los derechos reservados.
+                © {new Date().getFullYear()} Heriberto Yañez. {text}
             </p>
         </footer>
     );

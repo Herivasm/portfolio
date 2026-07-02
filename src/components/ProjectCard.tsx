@@ -10,6 +10,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import type { Language } from '../App'
+
 import { DiMongodb, DiPostgresql } from 'react-icons/di';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { GiArtificialIntelligence } from 'react-icons/gi';
@@ -47,6 +49,7 @@ const ICONS = {
 };
 
 interface ProjectCardProps {
+  language: Language;
   project: {
     title: string;
     description: string;
@@ -56,9 +59,20 @@ interface ProjectCardProps {
   };
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ language, project }: ProjectCardProps) => {
   const [open, setOpen] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
+
+  const labels = {
+    es: {
+      technologies: 'Tecnologías:',
+      project: 'Ver Proyecto',
+    },
+    en: {
+      technologies: 'Technologies:',
+      project: 'View Project',
+    },
+  }
 
   const lightboxSlides = project.images.map(image => ({ src: image }));
 
@@ -92,7 +106,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <p className="mt-2 text-neutral-300">{project.description}</p>
 
           <div className="mt-4 flex flex-wrap gap-3 items-center">
-            <span className="text-white font-semibold">Tecnologías:</span>
+            <span className="text-white font-semibold">{labels[language].technologies}</span>
             {project.technologies.map((techName) => (
               <div key={techName} className="text-2xl text-purple-400" title={techName}>
                 {ICONS[techName]}
@@ -108,7 +122,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 rel="noopener noreferrer"
                 className="inline-block text-purple-400 hover:text-purple-300 font-semibold"
               >
-                Ver Proyecto
+                {labels[language].project}
               </a>
             )}
           </div>

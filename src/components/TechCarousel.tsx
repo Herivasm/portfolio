@@ -5,6 +5,11 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiNextdotjs, SiExpress, SiJest, SiSwagger, SiJsonwebtokens, SiMongoose, SiSequelize, SiPrisma, SiNodemon, SiZod, SiReactquery, SiReacthookform, SiReactrouter, SiAxios, SiVite, SiNestjs, SiTypeorm, SiNatsdotio, SiSqlite, SiMysql } from 'react-icons/si';
 import { DiDocker } from 'react-icons/di';
 import { CgNpm } from 'react-icons/cg';
+import type { Language } from '../App'
+
+interface TechCarouselProps {
+    language: Language
+}
 
 const technologies = [
     { icon: <FaHtml5 />, name: 'HTML5' },
@@ -42,10 +47,12 @@ const technologies = [
     { icon: <FaReact />, name: 'Zustand' },
 ];
 
-const TechCarousel = () => {
+const TechCarousel = ({ language }: TechCarouselProps) => {
+    const heading = language === 'es' ? 'Tecnologías que Manejo' : 'Technologies I Use'
+
     return (
         <div className="py-12">
-            <h2 className="text-3xl font-bold text-center text-white mb-8">Tecnologías que Manejo</h2>
+            <h2 className="text-3xl font-bold text-center text-white mb-8">{heading}</h2>
             <Swiper
                 modules={[Autoplay]}
                 spaceBetween={30}
