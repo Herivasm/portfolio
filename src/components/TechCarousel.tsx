@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import './TechCarousel.css'
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiNextdotjs, SiExpress, SiJest, SiSwagger, SiJsonwebtokens, SiMongoose, SiSequelize, SiPrisma, SiNodemon, SiZod, SiReactquery, SiReacthookform, SiReactrouter, SiAxios, SiVite, SiNestjs, SiTypeorm, SiNatsdotio, SiSqlite, SiMysql } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiNextdotjs, SiExpress, SiJest, SiSwagger, SiJsonwebtokens, SiMongoose, SiSequelize, SiPrisma, SiNodemon, SiZod, SiReactquery, SiReacthookform, SiReactrouter, SiAxios, SiVite, SiNestjs, SiTypeorm, SiNatsdotio, SiSqlite, SiMysql, SiPnpm } from 'react-icons/si';
 import { DiDocker } from 'react-icons/di';
 import { CgNpm } from 'react-icons/cg';
 import type { Language } from '../App'
@@ -17,6 +17,7 @@ const technologies = [
     { icon: <SiJavascript />, name: 'JavaScript' },
     { icon: <SiTypescript />, name: 'TypeScript' },
     { icon: <CgNpm />, name: 'npm' },
+    { icon: <SiPnpm />, name: 'pnpm' },
     { icon: <FaNodeJs />, name: 'Node.js' },
     { icon: <SiExpress />, name: 'Express.js' },
     { icon: <SiNestjs />, name: 'NestJS' },
