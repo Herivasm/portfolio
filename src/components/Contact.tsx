@@ -28,7 +28,7 @@ const Contact = ({ language }: ContactProps) => {
             <p className="text-neutral-300 max-w-2xl mx-auto mb-8">{texts.description}</p>
             <a
                 href="mailto:sheribertoyanez@gmail.com"
-                className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105"
+                className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105"
             >
                 {texts.button}
             </a>
