@@ -13,6 +13,8 @@ const content = {
         description:
             'Ingeniero en Desarrollo y Gestión de Software con experiencia práctica y apasionado en el desarrollo de aplicaciones web utilizando TypeScript, Node.js y React, creando aplicaciones web eficientes y escalables, con implementación de APIs RESTful y el manejo de bases de datos gestionadas con Sequelize, Prisma, Mongoose y TypeORM.',
         download: 'Descargar Currículum',
+        resumeHref: '/curriculum.pdf',
+        resumeFilename: 'CV_HeribertoYanez_ES.pdf',
         alt: 'Foto de Heriberto Yañez',
     },
     en: {
@@ -20,6 +22,8 @@ const content = {
         description:
             'Software Development and Management Engineer with hands-on experience and a passion for building web applications using TypeScript, Node.js, and React, creating efficient and scalable apps with RESTful APIs and databases managed with Sequelize, Prisma, Mongoose, and TypeORM.',
         download: 'Download Resume',
+        resumeHref: '/curriculum-en.pdf',
+        resumeFilename: 'CV_HeribertoYanez_EN.pdf',
         alt: 'Photo of Heriberto Yañez',
     },
 }
@@ -38,8 +42,8 @@ const About = ({ language }: AboutProps) => {
                     <a href="mailto:sheribertoyanez@gmail.com" className="text-neutral-300 hover:text-white text-3xl transition-colors"><MdEmail /></a>
                 </div>
                 <a
-                    href="/curriculum.pdf"
-                    download="CV_Heriberto_Yañez.pdf"
+                    href={texts.resumeHref}
+                    download={texts.resumeFilename}
                     className="mt-8 inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105"
                 >
                     {texts.download}
