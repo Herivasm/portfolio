@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 import type { Language } from '../App'
 
 import { DiMongodb, DiPostgresql } from 'react-icons/di';
-import { FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 import { GiArtificialIntelligence } from 'react-icons/gi';
 import { SiAxios, SiDocker, SiExpress, SiJest, SiJsonwebtokens, SiMongoose, SiNatsdotio, SiNestjs, SiNextdotjs, SiNodemon, SiPrisma, SiReacthookform, SiReactquery, SiReactrouter, SiSequelize, SiSwagger, SiTailwindcss, SiTypeorm, SiTypescript, SiZod } from 'react-icons/si';
 
@@ -45,7 +45,10 @@ const ICONS = {
   'NestJS': <SiNestjs />,
   'TypeORM': <SiTypeorm />,
   'Docker': <SiDocker />,
-  'NATS': <SiNatsdotio />
+  'NATS': <SiNatsdotio />,
+  'HTML': <FaHtml5/>,
+  'CSS': <FaCss3 />,
+  'JavaScript': <FaJs />,
 };
 
 interface ProjectCardProps {

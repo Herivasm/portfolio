@@ -65,6 +65,11 @@ import pos6 from '../assets/projects/admin.webp'
 import pos7 from '../assets/projects/productos.webp'
 import pos8 from '../assets/projects/nuevo-prod.webp'
 import pos9 from '../assets/projects/edit prod.webp'
+
+import intcal from '../assets/projects/int_cal.webp'
+import intacal2 from '../assets/projects/int_cal2.webp'
+
+
 import type { Language } from '../App'
 
 interface ProjectsProps {
@@ -75,7 +80,7 @@ const misProyectos: {
     title: Record<Language, string>;
     description: Record<Language, string>;
     images: string[];
-    technologies: ('TypeScript' | 'Swagger ' | 'Jest' | 'Express.js' | 'React' | 'Tailwind CSS' | 'Nodemon' | 'JWT' | 'MongoDB' | 'Axios' | 'Mongoose' | 'Prisma' | 'AI' | 'Next.js' | 'Zustand' | 'Sequelize' | 'React Router' | 'PostgreSQL' | 'React Query' | 'React Hook Form' | 'Zod' | 'TypeORM' | 'NestJS')[];
+    technologies: ('HTML' | 'CSS' | 'JavaScript' | 'TypeScript' | 'Swagger' | 'Jest' | 'Express.js' | 'React' | 'Tailwind CSS' | 'Nodemon' | 'JWT' | 'MongoDB' | 'Axios' | 'Mongoose' | 'Prisma' | 'AI' | 'Next.js' | 'Zustand' | 'Sequelize' | 'React Router' | 'PostgreSQL' | 'React Query' | 'React Hook Form' | 'Zod' | 'TypeORM' | 'NestJS')[];
     link?: string;
 }[] = [
         {
@@ -116,7 +121,7 @@ const misProyectos: {
             title: { es: "Administrador de Productos", en: "Product Manager" },
             description: { es: "Una aplicación web para la gestión de productos. ", en: "A web app for product management. " },
             images: [admonProd1, admonProd2, admonProd3],
-            technologies: ['TypeScript', 'PostgreSQL', 'Sequelize', 'Express.js', 'Nodemon', 'Jest', 'Swagger ', 'React', 'Tailwind CSS', 'React Router', 'React Hook Form', 'Zod', 'Axios', 'Zustand'],
+            technologies: ['TypeScript', 'PostgreSQL', 'Sequelize', 'Express.js', 'Nodemon', 'Jest', 'Swagger', 'React', 'Tailwind CSS', 'React Router', 'React Hook Form', 'Zod', 'Axios', 'Zustand'],
         },
         {
             title: { es: "Cocktail App", en: "Cocktail App" },
@@ -159,6 +164,13 @@ const misProyectos: {
             images: [guitarla],
             technologies: ['TypeScript', 'React', 'Tailwind CSS'],
             link: 'https://heri-guitarla-ts.netlify.app/'
+        },
+        {
+            title: { es: "Calculadora Interactiva", en: "Interactive Calculator" },
+            description: { es: "Calculadora interactiva con función de historial desarrollada con JavaScript, HTML y CSS. Pone en práctica el manejo avanzado del DOM, funciones, estructuración semántica de HTML y estilos CSS.", en: "Interactive calculator with history function developed with JavaScript, HTML and CSS. Puts into practice advanced DOM manipulation, functions, semantic HTML structuring and CSS styles." },
+            images: [intcal, intacal2],
+            technologies: ['HTML', 'CSS', 'JavaScript'],
+            link: 'https://github.com/Herivasm/interactive-calculator.git'
         },
     ];
 

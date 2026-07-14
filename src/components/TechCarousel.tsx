@@ -6,6 +6,7 @@ import { SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiMongodb, SiN
 import { DiDocker } from 'react-icons/di';
 import { CgNpm } from 'react-icons/cg';
 import type { Language } from '../App'
+import { VscAzure } from 'react-icons/vsc';
 
 interface TechCarouselProps {
     language: Language
@@ -46,6 +47,7 @@ const technologies = [
     { icon: <SiAxios />, name: 'Axios' },
     { icon: <SiZod />, name: 'Zod' },
     { icon: <FaReact />, name: 'Zustand' },
+    {icon: <VscAzure />, name: 'Azure' }
 ];
 
 const TechCarousel = ({ language }: TechCarouselProps) => {
